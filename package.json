@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:ch": "node ./Chromedriver.io/ch.test.js",
-    "test:pup": "jest ./Puppetter"
+    "test": "jest ./Puppetter"
   },
   "repository": {
     "type": "git",
