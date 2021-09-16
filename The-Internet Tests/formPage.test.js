@@ -7,7 +7,7 @@ let browser;
 const width = 1920;
 const height = 1080;
 
-beforeAll(async () => {
+beforeEach(async () => {
     browser = await puppeteer.launch({
         headless: true,
         args: [`--window-size=${width},${height}`]
@@ -16,12 +16,12 @@ beforeAll(async () => {
     await page.setViewport({ width, height });
 }); 
 
-afterAll(() => {
+afterEach(() => {
     browser.close();
 });
 
 describe("UI Tests", () => {
-    it("floating menu page", async () => {
+    it("form auth page", async () => {
         const form = new Form();
 
         await form.goto(page);

@@ -1,21 +1,7 @@
 const puppeteer = require("puppeteer");
 const jestOr = require("../expecrOr");
 const locators = require("../lib/Locators/locators");
-const AddRemove = require("../lib/PageObject/addRemove");
-const BasicAuth = require("../lib/PageObject/basicAuth");
-const BrokenImage = require('../lib/PageObject/brokenImage');
-const ChallengingDom = require("../lib/PageObject/challengingDom");
-const Checkboxes = require("../lib/PageObject/checkboxes");
-const ContextMenu = require("../lib/PageObject/contextMenu");
-const DigestAuth = require("../lib/PageObject/digestAuth");
-const Dropdown = require("../lib/PageObject/dropdown");
-const DynamicContent = require("../lib/PageObject/dynamicContent");
 const Typos = require("../lib/PageObject/typos");
-const StatusCode = require("../lib/PageObject/statusCode");
-const DynamicControls = require("../lib/PageObject/dynamicControls");
-const DynamicLoading = require("../lib/PageObject/dynamicLoading");
-const EntryAdd = require("../lib/PageObject/entryAdd")
-
 
 let page;
 let browser;
