@@ -1,4 +1,0 @@
-Login via account icon on main page
-Login via PlusContent button on main page
-Observing account information after log in with valid data
-Login via account icon on main page with incorrect password
