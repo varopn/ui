@@ -28,25 +28,25 @@ afterEach(() => {
 
 describe('snapshot tests', () => {
     test('main page snapshot test', async () => {
-        await page.goto('https://www.joyn.de/serien',{
+        await page.goto('https://www.joyn.de/impressum',{
             waitUntil: 'networkidle2',
           });
 
         let mainPageImage = await page.screenshot();
         expect(mainPageImage).toMatchImageSnapshot({
-            failureThreshold: 0.05,
+            failureThreshold: 0.02,
             failureThresholdType: 'percent'
           });
     });
 
     test('q&a snapshot test', async () => {
-        await page.goto('https://www.joyn.de/filme', {
+        await page.goto('https://www.joyn.de/ueber-joyn', {
             waitUntil: 'networkidle2',
           });
 
         let mainPageImage = await page.screenshot();
         expect(mainPageImage).toMatchImageSnapshot({
-            failureThreshold: 0.05,
+            failureThreshold: 0.02,
             failureThresholdType: 'percent'
           });
     });
