@@ -27,7 +27,7 @@ afterEach(() => {
 }); 
 
 describe('snapshot tests', () => {
-    test('main page snapshot test', async () => {
+    test('Contact page snapshot test', async () => {
         await page.goto('https://www.joyn.de/impressum',{
             waitUntil: 'networkidle2',
           });
@@ -39,7 +39,7 @@ describe('snapshot tests', () => {
           });
     });
 
-    test('q&a snapshot test', async () => {
+    test('About snapshot test', async () => {
         await page.goto('https://www.joyn.de/ueber-joyn', {
             waitUntil: 'networkidle2',
           });
