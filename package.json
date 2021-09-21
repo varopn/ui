@@ -15,6 +15,7 @@
     "test:report": "jest --testResultsProcessor=./node_modules/jest-html-reporter",
     "test:report:internet": "jest ./The-Internet_Tests/ --testResultsProcessor=./node_modules/jest-html-reporter",
     "test:report:joyn": "jest ./Joyn.de_Tests/tests/ --testResultsProcessor=./node_modules/jest-html-reporter",
+    "test:snapshot": "npm run test ./Joyn.de_Tests/tests/snapshot.test.js ",
     "test:report:all": "npm run test:report && node nodemailer.js",
     "sendReport": "node nodemailer.js"
   },
